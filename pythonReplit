@@ -1,0 +1,170 @@
+2+2
+4
+>> print("hi there")
+hi there
+>> import math
+>>
+>> math.sqrt(25)
+5.0
+>> help(math.sqrt)
+Help on built-in function sqrt in module math:
+sqrt(x, /)
+   Return the square root of x.
+
+>> import this
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than right now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+need indintation for line breaks
+
+Code Comments
+     The issue comes down to the fact that they are fragile and can’t be trusted. Comments, by their nature, are static.
+      This means that you could completely change the behavior of a method, and if you don’t update the comments they will be rendered useless.
+
+it’s rare that comments are still applicable to the current system.
+
+     slowly stopped commenting my behavior based code, such as classes or methods. Instead I’ve focused on improving the names that I give parts of my programs.
+     I’ve discovered that if I name a code component properly, comments are no longer needed.
+
+utilize code comments for code organization
+
+comments can be helpful for large code files such as CSS style files.
+
+use general comments
+
+ automated comments can be helpful for reference purposes
+
+ automated tools that will also update the comments can be beneficial to a developer’s workflow.
+
+ In summary, code comments can lead to a number of negative issues for programs. 
+ Comments are fragile, can be misleading, and perform a poor job of explaining application behavior. 
+ A better choice is to improve at method naming, so that your code explains itself.
+
+MATRIX IN PYTHON 
+
+"""
+[
+    [0, 1, 2, 3, 4],
+    [1, 2, 3, 4, 5],
+    [2, 3, 4, 5, 6],
+    [3, 4, 5, 6, 7],
+    [4, 5, 6, 7, 8],
+]
+"""
+
+def manual_incrementing_matrix(n):
+    matrix = [ [ None for y in range(n) ] for x in range(n) ]
+
+    counter = 0
+
+    for idx, el in enumerate(matrix):
+        for nested_idx, nested_el in enumerate(el):
+            matrix[idx][nested_idx] = counter + nested_idx
+
+        counter += 1
+
+    return matrix
+
+print(manual_incrementing_matrix(5))
+
+VARIABLES
+
+variables themselves are simply containers for different data elements.
+
+You may put a set of numbers, a calculation, or even an entire sentence or paragraph within a variable
+
+variable in Python
+
+the name of your variable, an "=" sign, and what the variable should store. 
+For example, I've made a variable titled "name", the equal sign, followed by "Kristine".
+
+At a high level, a variable is a container; giving you the ability to store elements to reuse later on
+
+- Booleans 
+        (a true or false value)
+- Numbers 
+        standard integers (i.e.. 1, 2, 3, etc.), to large decimal type numbers, fractions, and floating point numbers, etc.
+         Numbers can also be connected to more powerful types of number based libraries (addressed in the numbers section).
+          numbers can be a large variety of different elements
+- Strings
+        any type of byte sequence ranging from a name or an entire HTML document. 
+        Therefore there is a wide selection of ways to integrate strings into your program. 
+        Typically, strings are wrapped with single or double quotation marks.
+- Bytes and byte arrays  
+        Bytes are a data type reserved for complex Python development
+         when you begin performing tasks such as rearranging byte sequences or working with images on a byte leve
+- None
+        example of using the none data type would possibly if you want to define a variable, 
+        but do not want to set its value yet, leaving you with option to later rearrange it and set it to another value.
+        "none" or a "noll"
+
+Data Structures
+        With these, you can manage collections inside of Python
+- Lists
+        is similar to an array
+- Tuples
+        similar to lists, but they have some unique characteristics
+- Sets
+        similar to lists, but they have some unique characteristics
+- Dictionaries
+         give you the ability to have key-value pairs.
+
+
+meal_completed = True
+sub_total = 100
+tip = sub_total *0.2
+total = sub_total + tip
+receipt = "Your total is " + str(total)
+print(receipt)
+
+answer = Your total is 120.0
+
+Monolithic architecture 
+        is the setup used for traditional server-side systems. The entire system’s function is based on a single application
+        it is faster to develop. You can create an application with basic features and then scale up over time.
+        Monolithic apps are also often faster than microservice apps
+        They don’t have to communicate with as many services, therefore they don’t have the same lag time you will find with 
+        some microservice apps (if they aren’t performing properly).
+        There are some drawbacks as well, though. Maintaining monolithic applications can be challenging if they are not designed well
+        puts all of the functions into a single process
+
+microservice applications 
+        every feature is its own application
+        You can build various services inside of the application.
+        Each can be tested and developed individually. 
+        Once the app is up and running, the services will run separate processes inside of it.
+        their ability to scale up. You can scale up individual components instead of scaling up the app as a whole. 
+        It is also more straightforward to test microservices. 
+        You can test the various components and isolate the problem quickly and easily. That allows you to find a prompt solution.
+        if you have a microservice architecture that has a reporting feature that resides in its own application, 
+        if the reporting feature crashes the rest of the application will continue running properly 
+        (it simply won’t have access to the reporting system until it’s back up).
+        some drawbacks Building an app with microservices can be a time-consuming process.
+        You have to configure each service, which is anything but quick.
+        You may also face some compatibility issues between your services when you update individual components
+
+
+
+
+
+

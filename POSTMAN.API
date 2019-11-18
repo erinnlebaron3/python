@@ -1,0 +1,19 @@
+https://mx.devcamp.com/22/guide/1832
+
+
+https://api.dailysmarty.com/posts
+
+#  API stands for application programming interface
+# really just means that it's a way that we can communicate with an application and we can do it without
+# implementing something like a scraper or anything like this.
+
+do not have any kind of authorization, this is important to know because whenever you start to work with applications 
+that require a username and password which is very common for some larger APIs, like Twitter, Facebook, or anything 
+like that. Then you would click on it and then you would pick whatever type of authentication that you need to use.
+Basic Auth is pretty common, and Digest Auth, and OAuth. Those are also common options as well. 
+Whatever API that you're working with will provide documentation and will tell you which one to pick out
+
+postman make API easier to read
+helps you know what data your working with and makes it easier to read the data
+
+postman lets you make any adjustments on the fly that you need to
